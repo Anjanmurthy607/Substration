@@ -23,7 +23,7 @@ pipeline {
 		deploy adapters: [tomcat9(url: 'http://localhost:8090/', 
                               credentialsId: 'tomcatcred')], 
                      war: 'target/*.war',
-                     contextPath: 'pipeline-demo'
+                     contextPath: 'addtion-function'
 		}
 		
 	}
