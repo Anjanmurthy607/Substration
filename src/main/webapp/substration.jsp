@@ -1,21 +1,13 @@
-<html>
-<head>
-<title>subtract two numbers</title>
-<script>
-function subs()//function to subtraction
+<script type="text/javascript">
+function add( )
 {
-var f_Num,s_Num,dif;
-f_Num=Number(document.getElementById("first").value);
-s_Num=Number(document.getElementById("second").value);
-dif=f_Num-s_Num;
-document.getElementById("ans").innerHTML="Difference:"+dif;
+var a,b,Add,Sub;
+a = parseInt(document.getElementById ("first").value);
+b = parseInt(document.getElementById ("second").value);
+Add = a+b; //Add two numbers
+Sub = a-b; //Subtraction of two numbers
+//To print the result
+document.getElementById ("add") .innerHTML ="Addition : "+Add;
+document.getElementById ("sub").innerHTML ="Subtraction : "+Sub;
 }
 </script>
-</head>
-<body>
-<p>Enter the first Number:<input type="text" id="first"></p>
-<p>Enter the second Number:<input type="text" id="second"></p>
-<button onclick="subs();">Subtract</button>
-<p id="ans"></p>
-</body>
-</html>
